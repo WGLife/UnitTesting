@@ -6,7 +6,7 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Cart andrewCart = new Cart("AndrewCart");
+        Cart andrewCart = new Cart("andrew-cart");
 
         RealItem car = new RealItem();
         car.setName("Audi");
@@ -25,7 +25,7 @@ public class Main {
         JsonParser parser = new JsonParser();
         parser.writeToFile(andrewCart);
 
-        Cart eugenCart = parser.readFromFile(new File("EugenCart"));
+        Cart eugenCart = parser.readFromFile(new File("src/main/resources/eugen-cart.json"));
         eugenCart.showItems();
     }
 }

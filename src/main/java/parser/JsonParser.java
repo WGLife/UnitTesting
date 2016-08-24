@@ -11,7 +11,7 @@ public class JsonParser implements Parser {
     private Gson gson = GsonUtils.getGson();
 
     public void writeToFile(Cart cart) {
-        try (FileWriter writer = new FileWriter(cart.getCartName())) {
+        try (FileWriter writer = new FileWriter("src/main/resources/" + cart.getCartName() + ".json")) {
             writer.write(gson.toJson(cart));
         } catch (IOException e) {
             e.printStackTrace();
