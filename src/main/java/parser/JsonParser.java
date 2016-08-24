@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 
 public class JsonParser implements Parser {
 
-    private Gson gson = GsonUtils.getGson();
+    private Gson gson = new Gson();
 
     public void writeToFile(Cart cart) {
         try (FileWriter writer = new FileWriter("src/main/resources/" + cart.getCartName() + ".json")) {

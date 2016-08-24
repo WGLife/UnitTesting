@@ -18,8 +18,8 @@ public class Main {
         disk.setPrice(11);
         disk.setSizeOnDisk(20000);
 
-        andrewCart.addItem(car);
-        andrewCart.addItem(disk);
+        andrewCart.addRealItem(car);
+        andrewCart.addVirtualItem(disk);
         andrewCart.showItems();
 
         JsonParser parser = new JsonParser();
