@@ -1,0 +1,1 @@
+{"CART_NAME":"EugenCart","items":[{"type":"RealItem","weight":1400.0,"name":"BMW","price":20321.0},{"type":"VirtualItem","sizeOnDisk":50000.0,"name":"GTA","price":15.0}],"items2":[{"type":"B"}],"total":24403.2}
